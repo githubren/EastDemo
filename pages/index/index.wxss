@@ -1,21 +1,37 @@
-/**index.wxss**/
-.userinfo {
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.index-nav .nav-item{
+  width: 33.33333%;
+  height: 200rpx;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  font-size: 22px;
+  border-bottom: 1rpx solid #ddd;
+  /* border-right: 1rpx solid #ddd */
 }
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.bdr{
+  position: relative
 }
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
+.bdr::after{
+  /* 内容为空 */
+  content: "";
+  /* 设置宽度为1rpx */
+  width: 1rpx;
+  /* 高度为所在父元素的高度 */
+  height: 100%;
+  /* 设置背景色 */
+  background-color: #ddd;
+  /* 设置位置为绝对 */
+  position: absolute;
+  /* 距离父元素右边为0 */
+  right: 0;
+  /* 距离父元素上边为0 */
+  top: 0;
 }
